@@ -1,5 +1,11 @@
 # THE ORRERY — NI24 Wave 1 · Akun 3 (@cicihandayani)
 
+[![make.fun bounty](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
+![rank](https://make.fun/badge/news-image-20261124/cicihandayani530/makefun-news-image-20261124/rank.svg)
+![reward](https://make.fun/badge/news-image-20261124/cicihandayani530/makefun-news-image-20261124/reward.svg)
+
+Bounty page: https://make.fun/bounty/news-image-20261124
+
 Bounty: `news-image-20261124` (make.fun) · Akun 3 · Discord @cicihandayani
 
 ## Konsep
