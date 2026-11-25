@@ -1,42 +1,43 @@
-# THE ORRERY — NI24 Wave 1 · Akun 3 (@cicihandayani)
+# THE COPPERPLATE — NI24 Wave 2 · Akun 3 (@cicihandayani)
 
-[![make.fun bounty](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
-![rank](https://make.fun/badge/news-image-20261124/cicihandayani530/makefun-news-image-20261124/rank.svg)
-![reward](https://make.fun/badge/news-image-20261124/cicihandayani530/makefun-news-image-20261124/reward.svg)
+[![Bounty](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
+[![Rank](https://make.fun/badge/news-image-20261124/cicihandayani530/makefun-news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124)
+[![Reward](https://make.fun/badge/news-image-20261124/cicihandayani530/makefun-news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124)
 
-Bounty page: https://make.fun/bounty/news-image-20261124
-
-Bounty: `news-image-20261124` (make.fun) · Akun 3 · Discord @cicihandayani
+Bounty: `news-image-20261124` (make.fun) · Akun 3 · GitHub @cicihandayani530
 
 ## Konsep
-Halaman berita satu gambar dibingkai sebagai meja planetarium/orrery:
-masthead "THE ORRERY — Tuesday's World in One Picture", palet tembaga /
-biru gelap di atas krem, cincin orbit tipis di masthead, nomor kartu dalam
-cincin kecil. Lead trio: #17 UN AI weapons · #15 FBI probe · #2 Sparta II.
-Semua cerita dari pool terkunci Selasa 24 November 2026 (angka induk pool,
-dipakai verbatim); tidak ada cerita yang dikarang, tidak ada item NI22/NI23
-yang dipakai sebagai berita.
+
+Satu hari berita dunia, Selasa 24 November 2026, diukir pada satu pelat
+tembaga: halaman koran satu gambar bergaya copperplate engraving —
+masthead serif besar di atas krem, strip angka induk di bawahnya, dan
+bar region berwarna yang menghitung semua cerita per kawasan.
+
+- **36 cerita** tersaji dalam satu halaman: **13 kartu adegan** bernomor
+  plus 23 brief bernomor di panel "Also on the Plate".
+- **9 region terlabel semua**: Europe, Middle East, Africa, Americas,
+  Asia, South Asia, Asia-Pacific, Oceania, World — bar region 9/9.
+- **Lead hard-news**: #1 Merkury (Ukraine sinks Russian warship off
+  Benghazi), #4 COP31 (ends with NO DEAL — first since 2000), #6 Gaza
+  (Israeli strikes kill 3, incl. UNRWA worker).
+- Angka induk pool, verbatim: Gold **$3,588** · Bitcoin **61,284** ·
+  US House **258–173** · Liverpool **4–0** · GTA VI Day 1 **$3.8BN**.
+- Panel "Date Check — Not Today" menyingkirkan cerita lama secara
+  eksplisit; setiap cerita berasal dari pool sah hari itu, tanpa hype.
+- Setiap kartu ditutup footer REPORTED dengan nama wire konfirmasi.
 
 ## Entry
+
 - Dimensi: **1024 × 1024 px** (lolos gate server)
-- Ukuran: **445.295 byte**
-- sha256: **6c40cd4a79ca6c5aa0cb557547ec5a934cd186698c86c49f74ff5dad4d2475cb**
-- `main.py` — carrier stdlib-only: verifikasi signature PNG + dimensi IHDR,
-  MENOLAK gambar yang melanggar gate 1024×1024, salin byte-for-byte ke
-  `MAKEFUN_OUTPUT_DIR` (fallback /output), verifikasi salinan identik.
-- `compose.py` — renderer PIL (stdlib + PIL): 3 varian (A/B/C) + duel
-  internal, pemenang (A) difinalisasi ke `entry.png` 1024×1024.
-- Margin: **13/13 LOLOS** (`margin_check.py --fresh ni24-fresh.txt`)
-- Isi: 15 kartu + 24 brief = **39 cerita**, 7 region, strip angka 8 item
-  (semua mengikat kartu), strip region 7 region, timeline 6 slot (satu jam
-  terverifikasi Selasa 04:24 WIB + day-part UTC), peta dunia titik-titik
-  berpin bernomor 1–15, panel ALSO ON, kotak DATE CHECK 7 buangan bernama
-  bertanggal, footer sumber + legenda kepastian + "Original drawings."
-
-## Cara menjalankan
-- `python3 compose.py` — render varian A/B/C (kanvas 3900×4288).
-- `python3 compose.py final A` — finalisasi varian pemenang ke `entry.png`.
-- `MAKEFUN_OUTPUT_DIR=out python3 main.py` — salin `entry.png` ke `out/`.
-
-## Lisensi
-MIT — lihat `LICENSE`.
+- Ukuran: **258.414 byte**
+- sha256: **fb95d06bc26f7a06a2fae6f44205a491b59557026dec5a33243525714df1f357**
+- `main.py` — carrier stdlib-only: verifikasi signature PNG + dimensi
+  IHDR + batas 1 MiB, lalu menulis byte `entry.png` persis sebagai
+  keluaran.
+- Craft: clip-layer per kartu di semua 13 kartu — polyline Bitcoin tetap
+  di dalam kartu #9, elips matahari COP31 ter-clip di bingkai kartunya,
+  sparkline tidak menyentuh footer REPORTED kartu #2/#3.
+- Verifikasi ulang mandiri sebelum push: kata "language" pada kartu
+  COP31 terbaca utuh di dalam bingkai, strip timeline UTC menampilkan
+  "(AP)" secara lengkap, dan footer REPORTED kartu Kyiv #3 serta
+  Sparta II #2 bersih tanpa luapan — diperiksa crop-zoom per zona.
